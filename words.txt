@@ -207,7 +207,7 @@ Radio-pump
 Rasist-cappuccino
 Rasist-låda
 Romantiska-daddlar
-Rullstolskalas
+Rullstols-kalas
 Rump-klyfta
 Rump-vätska
 Rymd-apa
@@ -217,7 +217,7 @@ Röv-skruffs
 Röv-slask
 Röv-hypotes
 Salami-salva
-Salongsbesvär
+Salongs-besvär
 Sandal-skvätt
 Sekret-stövel
 Självlärd-banan
@@ -273,7 +273,7 @@ Trumpet-hiss
 Trumpet-stång
 Tryffel-stänk
 Turbo-fis
-Tvättbjörnskramp
+Tvättbjörns-kramp
 Tå-fis
 Urin-salva
 Utomordentligt-inträde
@@ -425,7 +425,7 @@ Bacon-kista
 Blöj-rap
 Mån-stråle
 Lava-trosa
-Porslinsanka
+Porslins-anka
 Peruk-pukel
 Pasta-garn
 Vete-päls
