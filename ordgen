@@ -34,9 +34,6 @@ my %map;
 while(<$fh>) {
   chomp;
 
-  # fixa dessa i ordlistan alexander. Saknar - eller ' ' som skiljetecken.
-  next if /Porslinsanka|Rullstolskalas|Salongs|Tvättbj/;
-
   my ($k, $v) = split(/[- ]/, $_);
   $map{lc($k)} = lc($v);
 }
