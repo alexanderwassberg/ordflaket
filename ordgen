@@ -9,8 +9,9 @@ use utf8;
 use open qw(:std :utf8);
 
 my $APP  = 'ordgen';
-$VERSION = '0.001';
+$VERSION = '0.002';
 
+use Getopt::Long;
 use Data::Dumper;
 
 {
@@ -20,13 +21,30 @@ use Data::Dumper;
   $Quotekeys = 0;
 }
 
+my $opt = {
+  'delimiter' => '-',
+};
+
+GetOptions(
+  'd|delimiter:s' => \$opt->{delimiter},
+  '1|single'      => \$opt->{single},
+  'v|version'     => sub { printf "%s v%s\n", $0, $VERSION; exit },
+  'h|help'        => sub {
+    print <<"EOL";
+    Usage: $0 [Option]
+
+      -d, --delimiter   delimiter to use between words
+      -1, --single      render a single word and exit
+
+      -v, --version     display version info and exit
+      -h, --help        display this help and exit
+EOL
+    exit;
+  },
+);
+
+
 my $words = './words.txt';
-
-# kör programmet så här för att använda '-' som delimiter
-# istället för sammansatta ord:
-# $ perl ordgen -- -
-
-my $delimiter = shift // '';
 
 open(my $fh, '<', $words) or die $!;
 
@@ -38,9 +56,7 @@ while(<$fh>) {
   $map{lc($k)} = lc($v);
 }
 
-for my $k(sort(keys(%map))) {
-  printf "%s%s%s\n", $k, $delimiter,  $map{(keys %map)[rand keys %map]};
+for my $k(keys(%map)) {
+  printf "%s%s%s\n", $k, $opt->{delimiter},  $map{(keys %map)[rand keys %map]};
+  last if $opt->{single};
 }
-
-
-
