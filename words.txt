@@ -1,4 +1,4 @@
-﻿Aladdin-extas
+Aladdin-extas
 Advokat-påse
 Afro-brygga
 Afro-böld
@@ -74,7 +74,7 @@ Harpa-pappa
 Havre-extrakt
 Havs-container
 Helikopter-knipa
-Hemliga tapeter
+Hemlig-tapet
 Hemoroider-tank
 Heroin-limpa
 Himmelsk-haklapp
@@ -206,7 +206,7 @@ Rabarber-picnic
 Radio-pump
 Rasist-cappuccino
 Rasist-låda
-Romantiska-daddlar
+Romantik-daddlar
 Rullstols-kalas
 Rump-klyfta
 Rump-vätska
@@ -284,7 +284,7 @@ Yoga-protest
 Ytlig-present
 Yx-hydda
 Öl-salm
-Önskvärda-bedrifter
+Önskvärd-bedrift
 Öron-bluff
 Kiwi-skjorta
 Bäbis-körkort
