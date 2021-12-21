@@ -39,7 +39,7 @@ Cyber-massage
 Cykel-krans
 Distrikt-peppar
 Disco-lunch
-Diskret banan
+Diskret Banan
 Dragspels-mys
 Dunder-fiske
 DVD-tejp
@@ -110,7 +110,7 @@ Komet-klister
 Kondom-kubb
 Konkel-smurf
 Konkel-ånga
-Konkret valuta
+Konkret Valuta
 Konkurs-balle
 Korv-tång
 Katolsk-krycka
@@ -341,11 +341,11 @@ Gylf-yl
 Gryt-mys
 Pöl-röra
 Snickar-snacks
-kompass-nyckel
-väsk-jubel
-gylf-fylla
-fläsk-automat
-dragon-flykt
+Kompass-nyckel
+Väsk-jubel
+Gylf-fylla
+Fläsk-automat
+Dragon-flykt
 Cykel-kaka
 Galleri-knut
 Tuggummi-blinkers
@@ -357,16 +357,16 @@ Kinder-fantasi
 Läger-kabel
 Disney-påle
 Snabel-rap
-kaviar-sladd
-poker-golf
-kaffe-lycka
-lovlig-potatis
-rymd-påsk
-last-grav
-dusch-säck
-erotisk-fälla
-mys-pussel
-tamburin-jage
+Kaviar-sladd
+Poker-golf
+Kaffe-lycka
+Lovlig-potatis
+Rymd-påsk
+Last-grav
+Dusch-säck
+Erotisk-fälla
+Mys-pussel
+Tamburin-jage
 Slangbells-ortoped
 Svans-skägg
 Fitt-knut
@@ -430,22 +430,22 @@ Pasta-garn
 Vete-päls
 Knull-kasse
 Kladd-låda
-husdjurs-guide
-klubb-syntes
-gullig-droppe
-kylskåps-kalas
-snus-stålfon
-mun-grotta
-stål-potta
-ljud-grav
-bensin-snuva
+Husdjurs-guide
+Klubb-syntes
+Gullig-droppe
+Kylskåps-kalas
+Snus-stålfon
+Mun-grotta
+Stål-potta
+Ljud-grav
+Bensin-snuva
 Potatis-poletter
-nyckel-pinne
-köks-stav
-tvål-koja
-kött-krubb
-snyft-macka
-ketchup-kofta
+Nyckel-pinne
+Köks-stav
+Tvål-koja
+Kött-krubb
+Snyft-macka
+Ketchup-kofta
 Koloni-farfar
 Nagel-applåd
 Knaster-plast
@@ -491,4 +491,4 @@ Kofots-Dräng
 Kamel-fösare
 Träsk-fiskare
 Bastu-kines
-motiverad-överläpp
+Motiverad-överläpp
