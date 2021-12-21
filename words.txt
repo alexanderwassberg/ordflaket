@@ -290,7 +290,7 @@ Kiwi-skjorta
 Bäbis-körkort
 7takt-protest
 Svenska-tomtar
-Arabiskt-hårfäste
+Arab-hårfäste
 Pås-runk
 Ap-ragg
 Ful-sprut
@@ -452,7 +452,7 @@ Knaster-plast
 Dräng-ventil
 Maräng-flöjt
 Spik-struts
-Spanska-torskar
+Spansk-torsk
 Piano-flint
 Rektala-smultron
 Tomat-smitta
