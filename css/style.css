@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    color: white;
+    background: #252525;
 }
 
 .container {
@@ -19,33 +21,20 @@ body {
 }
 
 .logo {
-    background: #f3f3f3;
-    border-radius: 20px;
-    padding: 1em 3em;
-    position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 0;
 }
 
-.logo::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: inherit;
-    top: -10px;
-    transform: rotate(45deg);
-    margin: auto;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-
-.logo h4 {
-    margin: 0;
+.logo svg {
+    width: 120px;
 }
 
 h1 {
     font-size: 3rem;
+}
+
+h1:first-letter {
+    text-transform: uppercase;
 }
 
 button {
@@ -54,10 +43,11 @@ button {
     padding: 1em 4em;
     border: 0;
     outline: 0;
-    font-size: 1em;
+    font-size: 1.2em;
     position: fixed;
     bottom: 40px;
     font-weight: bold;
-    color: white;
+    color: #252525;
     cursor: pointer;
+    font-weight: 600;
 }
