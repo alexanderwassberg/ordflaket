@@ -13,8 +13,8 @@ function getWord() {
 
     for (var i = 0; i < wordList.length; i++) {
       var words = wordList[i].split("-");
-      wordsLeft[i]   = words[0];
-      wordsRight[i]  = words[1];
+      wordsLeft[i] = words[0];
+      wordsRight[i] = words[1];
       var word = wordsLeft[getRandomInt(wordList.length)]+"-"+wordsRight[getRandomInt(wordList.length)];
     }
 
