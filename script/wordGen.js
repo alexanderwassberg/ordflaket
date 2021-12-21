@@ -1,7 +1,7 @@
 getWord();
 
 function getWord() {
-  fetch('https://raw.githubusercontent.com/alexanderwassberg/ordflaket2.0/main/words.txt')
+  fetch('https://raw.githubusercontent.com/alexanderwassberg/ordflaket/master/words.txt')
   .then(response => response.text())
   .then(data => {
     var wordList = data.split("\n");
