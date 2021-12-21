@@ -6,7 +6,10 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
-    background: #252525;
+    background-color: #252525;
+    opacity: 1;
+    background-size: 20px 20px;
+    background-image: repeating-linear-gradient(45deg, #282828 0, #282828 1px, #252525 0, #252525 50%);
 }
 
 .container {
@@ -16,12 +19,18 @@ body {
     height: 100%;
     flex-direction: column;
     text-align: center;
+    gap: 2em;
 }
 
 
 .logo {
     position: fixed;
     top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+    align-items: center;
 }
 
 .logo svg {
@@ -32,6 +41,7 @@ body {
     background: #2a2a2a;
     margin: 0;
     width: 100%;
+    position: relative;
 }
 
 h1 {
@@ -42,7 +52,27 @@ h1:first-letter {
     text-transform: uppercase;
 }
 
-button {
+.voice-changer {
+    display: none;
+	-webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+.voice-changer.active {
+    position: absolute;
+    top: 90px;
+    display: block;
+    width: 70vw;
+    -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+            animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+}
+
+button.btn-generate {
     font-family: 'Poppins', sans-serif;
     line-height: 0;
     background: #FCA868;
@@ -58,8 +88,25 @@ button {
     width: 70vw;
 }
 
+button.btn-generate i {
+    padding-top: 5px;
+}
+
+button.btn-voice {
+    border: 0;
+    font-size: 1.5em;
+    background: transparent;
+    color: white;
+}
+
+.btn-voice i {
+    padding: 0;
+    margin: 0;
+}
+
 @media screen and (min-width: 600px) {
-    button { width: 200px; }
+    button.btn-generate { width: 200px; bottom: 20vh; }
     h1 { font-size: 4em; }
     .word-container { max-width: 800px; border-radius: 20px; }
+    .logo { max-width: 800px; }
 }
