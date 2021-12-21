@@ -56,7 +56,7 @@ button {
     outline: 0;
     font-size: 1em;
     position: fixed;
-    bottom: 10vh;
+    bottom: 40px;
     font-weight: bold;
     color: white;
     cursor: pointer;

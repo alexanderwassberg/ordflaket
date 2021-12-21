@@ -110,7 +110,7 @@ Komet-klister
 Kondom-kubb
 Konkel-smurf
 Konkel-ånga
-Konkret Valuta
+Konkret-Valuta
 Konkurs-balle
 Korv-tång
 Katolsk-krycka
@@ -119,7 +119,7 @@ Krusbärs-krull
 Krusbärs-optiker
 Krut-ortoped
 Kantarell-krystare
-Kräm-förlamning 
+Kräm-förlamning
 Lakris-balsam
 Lavemang-pasta
 Lax-slask
