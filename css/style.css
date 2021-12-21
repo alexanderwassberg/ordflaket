@@ -61,5 +61,5 @@ button {
 @media screen and (min-width: 600px) {
     button { width: 200px; }
     h1 { font-size: 4em; }
-    .word-container { max-width: 800px; }
+    .word-container { max-width: 800px; border-radius: 20px; }
 }
