@@ -3,8 +3,8 @@ getWord();
 
 
 function getWord() {
-  // Fetching repository textfile
-  fetch('https://raw.githubusercontent.com/alexanderwassberg/ordflaket/master/words.txt')
+  // Fetching text file
+  fetch('../words.txt')
   .then(response => response.text())
   .then(data => {
     var wordList = data.split("\n");
