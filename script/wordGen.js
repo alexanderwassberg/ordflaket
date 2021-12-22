@@ -41,7 +41,7 @@ function populate_voices()
       var x = voice.voiceURI;
       var voice_dropdown = document.getElementById("voice");
       var option = document.createElement("option");
-      option.text = voice.voiceURI;
+      option.text = voice.voiceURI+" ("+voice.lang+")";
       option.value = option_index;
       voice_dropdown.add(option);
       option_index++;
