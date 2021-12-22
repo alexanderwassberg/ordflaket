@@ -1,8 +1,10 @@
+
 // Generates the first word when visiting ordlflaket
-getWord();
-
-
 function getWord() {
+
+  var voice_id = document.getElementById("voice").selectedIndex;
+
+  populate_voices();
   // Fetching text file
   fetch('../words.txt')
   .then(response => response.text())
@@ -30,15 +32,35 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-// Adds the voices that reads the generated word
+function populate_voices()
+{
+    var voices = window.speechSynthesis.getVoices();
+    var option_index = 0;
+    voices.forEach(function (voice)
+    {
+      var x = voice.voiceURI;
+      var voice_dropdown = document.getElementById("voice");
+      var option = document.createElement("option");
+      option.text = voice.voiceURI;
+      option.value = option_index;
+      voice_dropdown.add(option);
+      option_index++;
+    });
+}
+
 function say(m) {
+  var voice_id = document.getElementById("voice").selectedIndex;
+  var volumeSlide = document.getElementById("volume").value;
+  var pitchSlide = document.getElementById("pitch").value;
+  var rateSlide = document.getElementById("rate").value;
+  console.log(rateSlide);
   var msg = new SpeechSynthesisUtterance();
   var voices = window.speechSynthesis.getVoices();
-  msg.voice = voices[9];
+  msg.voice = voices[voice_id];
   msg.voiceURI = "native";
-  msg.volume = 1;
-  msg.rate = 1.2;
-  msg.pitch = 1;
+  msg.volume = volumeSlide;
+  msg.rate = rateSlide;
+  msg.pitch = pitchSlide;
   msg.text = m;
   msg.lang = 'sv-SE';
   speechSynthesis.speak(msg);
