@@ -47,7 +47,7 @@ ego-pant
 fis-bevis
 fisk-glassyr
 fisk-salong
-fitt-skaft
+smitt-skaft
 flykt-smör
 flät-skaft
 frigolit-kräm
@@ -198,7 +198,7 @@ pung-läpp
 pung-planka
 pung-plattare
 pung-sked
-purjo-bög
+purjo-nörd
 parma-prutt
 påhittad-livrem
 rabarber-fnöske
@@ -320,7 +320,7 @@ sprut-tanke
 maräng-pipa
 kamrat-stång
 skägg-rör
-djungel-hora
+djungel-toa
 jazz-jacka
 paraply-förbud
 stripp-lödder
