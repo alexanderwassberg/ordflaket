@@ -1,13 +1,15 @@
-// Generates the first word when visiting ordlflaket
 function getWord() {
 
     var voice_id = document.getElementById("voice").selectedIndex;
 
-    // Fetching text file
-    fetch('../words.txt')
+    // Fetching Raw Github Repo text file for faster maintaining
+    fetch('https://raw.githubusercontent.com/alexanderwassberg/ordflaket/master/words.txt')
     .then(response => response.text())
     .then(data => {
+        // Split (on row) text file into a array
         var wordList = data.split("\n");
+
+        // Creating two new arrays for each side of the "-" mark
         var wordsLeft = [];
         var wordsRight = [];
 
@@ -18,6 +20,7 @@ function getWord() {
             var word = wordsLeft[getRandomInt(wordList.length)] + '-' + wordsRight[getRandomInt(wordList.length)];
         }
 
+        // Targets the H1-element for pushing the word
         var el = document.getElementById('word');
         el.innerText = word;
         say(word);
@@ -25,10 +28,12 @@ function getWord() {
     });
 }
 
+// Randomize function
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+// Let's the user change the voice
 function populate_voices() {
     var voices = window.speechSynthesis.getVoices();
     var option_index = 0;
@@ -44,6 +49,7 @@ function populate_voices() {
     });
 }
 
+// Voice Over functionality
 function say(m) {
     var voice_id = document.getElementById("voice").selectedIndex;
     var volumeSlide = document.getElementById("volume").value;
@@ -62,6 +68,7 @@ function say(m) {
     speechSynthesis.speak(msg);
 }
 
+// Copies the generated word the the Clipboard by clicking the text of the word
 function copyWord() {
     var textToCopy = document.querySelector('h1').innerText;
 
