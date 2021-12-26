@@ -287,7 +287,7 @@ yx-hydda
 önskvärd-bedrift
 öron-bluff
 kiwi-skjorta
-bäbis-körkort
+bebis-körkort
 Neon-protest
 svensk-tomte
 arab-hårfäste
@@ -416,7 +416,7 @@ flykt-herpes
 kaviar-blöja
 öl-rep
 plåt-öl
-bäbis-kontakt
+barista-kontakt
 spegel-vals
 ballong-pulver
 näs-filt
