@@ -17,7 +17,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body onload="getWord();">
+<body onload="getWord();populate_voices();">
     <div class="container">
         <div class="logo">
             <svg width="430" height="115" viewBox="0 0 430 115" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,7 @@
         </div>
 
         <div class="voice-changer">
-            <div class="option">
+            <div class="option" style="display: none;">
                 <label for="voice">Röst</label>
                 <select name="voice" id="voice"></select>
             </div>
@@ -44,7 +44,7 @@
             </div>
             <div class="option">
                 <label for="pitch">Pitch</label>
-                <input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1">
+                <input type="range" min="0.1" max="2" step="0.1" name="pitch" id="pitch" value="1">
             </div>
         </div>
 

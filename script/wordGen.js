@@ -1,9 +1,7 @@
-
 // Generates the first word when visiting ordlflaket
 function getWord() {
 
     var voice_id = document.getElementById("voice").selectedIndex;
-    populate_voices();
 
     // Fetching text file
     fetch('../words.txt')

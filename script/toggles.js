@@ -3,7 +3,6 @@ const btnVoiceClose = document.querySelector('.btn-voice-close');
 const voiceChanger = document.querySelector('.voice-changer');
 
 function toggleVoices() {
-    populate_voices();
     voiceChanger.classList.toggle('active');
     btnVoice.innerHTML = "<i class='fa fa-times-circle'></i>";
 
