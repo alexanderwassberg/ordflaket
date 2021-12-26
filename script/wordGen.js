@@ -52,7 +52,7 @@ function say(m) {
     var msg = new SpeechSynthesisUtterance();
     var voices = window.speechSynthesis.getVoices();
 
-    msg.voice = voices[voice_id];
+    msg.voice = voices[4];
     msg.voiceURI = "native";
     msg.volume = volumeSlide;
     msg.rate = rateSlide;
