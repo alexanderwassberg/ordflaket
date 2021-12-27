@@ -39,7 +39,7 @@ cyber-massage
 cykel-krans
 distrikt-peppar
 disco-lunch
-diskret-banan
+disk-banan
 dragspels-mys
 dunder-fiske
 dvd-tejp
@@ -59,7 +59,7 @@ glögg-krok
 smuts-tub
 gom-grotta
 gonorré-bräda
-gris-müssli
+gris-müsli
 gris-spya
 grott-influensa
 grädd-slunga
@@ -81,7 +81,7 @@ himmelsk-haklapp
 hummer-tamp
 hyper-fnöske
 häst-kaffe
-häst-mûssli
+häst-doktorant
 häst-pop
 ica-båt
 iver-tång
@@ -275,7 +275,7 @@ turbo-fis
 tvättbjörns-kramp
 tå-fis
 urin-salva
-utomordentligt-inträde
+ute-inträde
 vant-stråle
 vinkel-harpa
 vinäger-pudding
@@ -295,7 +295,7 @@ pås-runk
 ap-ragg
 ful-sprut
 grogg-tändare
-pulserande-vitaminer
+puls-vitaminer
 jord-loska
 ansikts-pump
 batteri-hydda
@@ -432,9 +432,9 @@ knull-kasse
 kladd-låda
 husdjurs-guide
 klubb-syntes
-gullig-droppe
+guld-droppe
 kylskåps-kalas
-snus-stålfon
+snus-träd
 mun-grotta
 stål-potta
 ljud-grav
@@ -454,7 +454,7 @@ maräng-flöjt
 spik-struts
 spansk-torsk
 piano-flint
-rektala-smultron
+rektal-smultron
 tomat-smitta
 kalling-pasta
 rökiga-flöjtar
@@ -463,7 +463,7 @@ paraply-hängslen
 betong-docka
 diarré-mutter
 rap-fälla
-snea-ballonger
+senil-ballong
 läder-tröja
 radio-skugga
 muskel-syrra
