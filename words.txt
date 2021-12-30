@@ -278,7 +278,7 @@ urin-salva
 ute-inträde
 vant-stråle
 vinkel-harpa
-vinäger-pudding
+vin-pudding
 vältalad-planka
 yoga-protest
 ytlig-present
@@ -508,3 +508,4 @@ kompis-barn
 bäver-rånare
 räv-helg
 säl-sjuka
+soya-jakt
