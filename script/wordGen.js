@@ -18,11 +18,17 @@ function getWord() {
                 var words = wordList[i].split("-");
                 wordsLeft[i] = words[0];
                 wordsRight[i] = words[1];
-                var word = wordsLeft[getRandomInt(wordList.length)] + '-' + wordsRight[getRandomInt(wordList.length)];
+                var wordIndex1 = getRandomInt(wordList.length);
+                var wordIndex2 = getRandomInt(wordList.length);
+                var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
+
             }
 
+            console.log(wordIndex1, wordIndex2);
             var el = document.getElementById('word');
             el.innerText = word;
+            el.dataset.word1 = wordIndex1;
+            el.dataset.word2 = wordIndex2;
             say(word);
 
         });
