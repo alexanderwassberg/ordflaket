@@ -46,6 +46,7 @@ body {
 
 h1 {
     font-size: 2rem;
+    cursor: pointer;
 }
 
 h1:first-letter {
@@ -102,6 +103,40 @@ button.btn-voice {
 .btn-voice i {
     padding: 0;
     margin: 0;
+}
+
+
+.copied {
+    background: #fca868;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.copied-container {
+    opacity: 0;
+    height: 0;
+}
+.copied-container.active {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
 }
 
 @media screen and (min-width: 600px) {

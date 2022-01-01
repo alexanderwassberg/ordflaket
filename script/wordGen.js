@@ -5,33 +5,42 @@ function getWord() {
     fetch('https://raw.githubusercontent.com/alexanderwassberg/ordflaket/master/words.txt')
         .then(response => response.text())
         .then(data => {
-
-            function getRandomInt(max) {
-                return Math.floor(Math.random() * max);
-            }
-
-            var wordList = data.split("\n");
-            var wordsLeft = [];
-            var wordsRight = [];
-
-            for (var i = 0; i < wordList.length; i++) {
-                var words = wordList[i].split("-");
-                wordsLeft[i] = words[0];
-                wordsRight[i] = words[1];
-                var wordIndex1 = getRandomInt(wordList.length);
-                var wordIndex2 = getRandomInt(wordList.length);
-                var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
-
-            }
-
-            console.log(wordIndex1, wordIndex2);
-            var el = document.getElementById('word');
-            el.innerText = word;
-            el.dataset.word1 = wordIndex1;
-            el.dataset.word2 = wordIndex2;
-            say(word);
-
+            wordGen(data);
         });
+}
+
+function wordGen(data) {
+    var wordList = data.split("\n");
+    popup.classList.remove('active');
+
+
+    // Word Arrays (left-right)
+    var wordsLeft = [];
+    var wordsRight = [];
+
+    // Takes two random numbers for the arrays
+    var wordIndex1 = getRandomInt(wordList.length);
+    var wordIndex2 = getRandomInt(wordList.length);
+
+    for (var i = 0; i < wordList.length; i++) {
+        var words = wordList[i].split("-");
+        wordsLeft[i] = words[0];
+        wordsRight[i] = words[1];
+    }
+
+    console.log(wordIndex1 + '-' + wordIndex2);
+
+    var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
+
+    var el = document.getElementById('word');
+    el.innerText = word;
+    el.dataset.word1 = wordIndex1;
+    el.dataset.word2 = wordIndex2;
+    say(word);
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
 }
 
 function populate_voices() {
@@ -67,8 +76,12 @@ function say(m) {
     speechSynthesis.speak(msg);
 }
 
+var popup = document.querySelector('.copied-container');
+
 function copyWord() {
+
     var textToCopy = document.querySelector('h1').innerText;
+    popup.classList.add('active');
 
     if (navigator.clipboard && window.isSecureContext) {
         return navigator.clipboard.writeText(textToCopy);
@@ -88,4 +101,15 @@ function copyWord() {
             textArea.remove();
         });
     }
+}
+
+function getIndicesFromUrl() {
+    var indices = [];
+
+    window.location.search.replace("?", "").split("-").forEach(
+        function(d) {
+        indices.push(d);
+    });
+
+    return indices;
 }
