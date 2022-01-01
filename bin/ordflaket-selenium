@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+# vim: ft=perl:fdm=marker:fmr=#<,#>:fen:et:sw=2:
+use strict;
+use warnings FATAL => 'all';
+use vars     qw($VERSION);
+use autodie  qw(:all);
+
+use utf8;
+use open qw(:std :utf8);
+
+my $APP  = 'ordflaket-selenium';
+$VERSION = '0.001';
+
+use strict;
+use warnings;
+use Selenium::Chrome;
+
+my $driver   = Selenium::Chrome->new;
+my $base_url = 'https://ordflaket.se';
+
+$driver->get($base_url);
+
+my $generate = $driver->find_element_by_class('btn-generate');
+
+while(1) {
+  $generate->click();
+  sleep 2;
+}
