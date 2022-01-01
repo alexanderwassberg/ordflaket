@@ -509,3 +509,5 @@ bäver-rånare
 räv-helg
 säl-sjuka
 soya-jakt
+kräk-värk
+kamera-pumpa
