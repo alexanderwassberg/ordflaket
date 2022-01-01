@@ -1,6 +1,6 @@
 {
-    "name": "Hello World",
-    "short_name": "Hello",
+    "name": "Ordflaket",
+    "short_name": "Ordflaket",
     "icons": [{
       "src": "./assets/icons/128.png",
         "sizes": "128x128",
@@ -28,6 +28,8 @@
       }],
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "white",
-    "theme_color": "white"
+    "lang": "sv-SE",
+    "orientation": "portrait",
+    "background_color": "#252525",
+    "theme_color": "#252525"
   }
