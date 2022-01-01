@@ -1,3 +1,15 @@
+
+window.onload = () => {
+    'use strict';
+  
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('./sw.js');
+    }
+
+    getWord();
+}
+
 function getWord() {
 
     var voice_id = document.getElementById("voice").selectedIndex;
