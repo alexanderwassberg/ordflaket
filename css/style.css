@@ -126,7 +126,7 @@ button.btn-voice {
     position: absolute;
     top: -50px;
     right: 20px;
-    animation: fadeinout 4s linear forwards;
+    animation: fadeinout 2s linear forwards;
 }
 
 @-webkit-keyframes fadeinout {
