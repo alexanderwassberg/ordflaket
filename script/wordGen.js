@@ -21,9 +21,10 @@ function getWord() {
 }
 
 function wordGen(data) {
-    var wordList = data.split("\n");
+    // Hides popup when generating new word
     popup.classList.remove('active');
 
+    var wordList = data.split("\n");
 
     // Word Arrays (left-right)
     var wordsLeft = [];
@@ -47,6 +48,7 @@ function wordGen(data) {
     el.innerText = word;
     el.dataset.word1 = wordIndex1;
     el.dataset.word2 = wordIndex2;
+
     say(word);
 }
 
@@ -54,23 +56,7 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-function populate_voices() {
-    var voices = window.speechSynthesis.getVoices();
-    var option_index = 0;
-
-    voices.forEach(function (voice) {
-        var x = voice.voiceURI;
-        var voice_dropdown = document.getElementById("voice");
-        var option = document.createElement("option");
-        option.text = voice.voiceURI+" ("+voice.lang+")";
-        option.value = option_index;
-        voice_dropdown.add(option);
-        option_index++;
-    });
-}
-
 function say(m) {
-    var voice_id = document.getElementById("voice").selectedIndex;
     var volumeSlide = document.getElementById("volume").value;
     var pitchSlide = document.getElementById("pitch").value;
     var rateSlide = document.getElementById("rate").value;
