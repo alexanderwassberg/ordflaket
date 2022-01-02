@@ -100,6 +100,14 @@ button.btn-voice {
     color: white;
 }
 
+.combos {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    font-size: .75rem;
+}
+
 .btn-voice i {
     padding: 0;
     margin: 0;

@@ -24,6 +24,7 @@ function wordGen(data) {
     popup.classList.remove('active');
 
     var wordList = data.split("\n");
+    document.querySelector('.combos').innerText = (Math.pow(wordList.length, 2)).toLocaleString('en') + ' möjliga kombinationer';
 
     // Word Arrays (left-right)
     var wordsLeft = [];
