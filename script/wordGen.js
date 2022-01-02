@@ -33,6 +33,18 @@ function wordGen(data) {
     var wordIndex1 = getRandomInt(wordList.length);
     var wordIndex2 = getRandomInt(wordList.length);
 
+    var preIndex = getIndicesFromUrl();
+
+    if((typeof preIndex[0] === 'undefined') || (typeof preIndex[1] === 'undefined'))
+    {
+        console.log('Test');
+    }
+    else
+    {
+        wordIndex1 = preIndex[0];
+        wordIndex2 = preIndex[1];
+    }
+
     for (var i = 0; i < wordList.length; i++) {
         var words = wordList[i].split("-");
         wordsLeft[i] = words[0];
@@ -101,12 +113,6 @@ function copyWord() {
 }
 
 function getIndicesFromUrl() {
-    var indices = [];
-
-    window.location.search.replace("?", "").split("-").forEach(
-        function(d) {
-        indices.push(d);
-    });
-
-    return indices;
+	var url = window.location.search.replace(/[^\d|\-]/g, "");
+    return url.split("-");
 }
