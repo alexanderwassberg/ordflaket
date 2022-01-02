@@ -10,7 +10,6 @@ window.onload = () => {
 }
 
 function getWord() {
-
     var voice_id = document.getElementById("voice").selectedIndex;
     
     fetch('https://raw.githubusercontent.com/alexanderwassberg/ordflaket/master/words.txt')
@@ -40,8 +39,6 @@ function wordGen(data) {
         wordsRight[i] = words[1];
     }
 
-    console.log(wordIndex1 + '-' + wordIndex2);
-
     var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
 
     var el = document.getElementById('word');
@@ -49,7 +46,10 @@ function wordGen(data) {
     el.dataset.word1 = wordIndex1;
     el.dataset.word2 = wordIndex2;
 
+    window.history.pushState({}, '', '/?' + wordIndex1 + '-' + wordIndex2);
+
     say(word);
+    console.log(wordIndex1 + '-' + wordIndex2);
 }
 
 function getRandomInt(max) {
