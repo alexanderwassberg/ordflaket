@@ -102,10 +102,11 @@ button.btn-voice {
 
 .combos {
     position: fixed;
-    bottom: 5px;
+    bottom: 10px;
     left: 0;
     right: 0;
-    font-size: .75rem;
+    font-size: .6rem;
+    color: #727272;
 }
 
 .btn-voice i {
