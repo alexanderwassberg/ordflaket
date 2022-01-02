@@ -35,12 +35,9 @@ function wordGen(data) {
 
     var preIndex = getIndicesFromUrl();
 
-    if((typeof preIndex[0] === 'undefined') || (typeof preIndex[1] === 'undefined'))
-    {
+    if((typeof preIndex[0] === 'undefined') || (typeof preIndex[1] === 'undefined')) {
         console.log('Test');
-    }
-    else
-    {
+    } else {
         wordIndex1 = preIndex[0];
         wordIndex2 = preIndex[1];
     }
@@ -52,13 +49,12 @@ function wordGen(data) {
     }
 
     var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
+    window.history.pushState({}, '', '/?' + wordIndex1 + '-' + wordIndex2);
 
     var el = document.getElementById('word');
     el.innerText = word;
     el.dataset.word1 = wordIndex1;
     el.dataset.word2 = wordIndex2;
-
-    window.history.pushState({}, '', '/?' + wordIndex1 + '-' + wordIndex2);
 
     say(word);
     console.log(wordIndex1 + '-' + wordIndex2);
