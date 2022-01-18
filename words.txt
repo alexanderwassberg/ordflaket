@@ -535,3 +535,4 @@ Smör-klocka
 Vatten-morot
 Kuk-prins
 Glasögon-galje
+Dialog-lektion
