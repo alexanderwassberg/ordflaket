@@ -546,3 +546,8 @@ Pokemon-lån
 Frost-spade
 Oliver-rengöring
 Fjoll-stereo
+Hunger-rekord
+Fönster-krisp
+Snö-bula
+Sommar-förbannelse
+Pandemi-råtta
