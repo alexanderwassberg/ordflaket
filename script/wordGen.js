@@ -47,10 +47,9 @@ function wordGen(data) {
     el.dataset.word1 = wordIndex1;
     el.dataset.word2 = wordIndex2;
 
-    window.history.pushState({}, '', '/?' + wordIndex1 + '-' + wordIndex2);
+    // window.history.pushState({}, '', '/?' + wordIndex1 + '-' + wordIndex2);
 
     say(word);
-    console.log(wordIndex1 + '-' + wordIndex2);
 }
 
 function getRandomInt(max) {
