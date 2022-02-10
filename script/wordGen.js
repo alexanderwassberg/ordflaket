@@ -7,6 +7,7 @@ window.onload = () => {
     }
 
     getWord();
+
 }
 
 function getWord() {
@@ -17,6 +18,26 @@ function getWord() {
         .then(data => {
             wordGen(data);
         });
+
+    if (window.location.href.indexOf("#business") > -1) { getName() }
+}
+
+function getName() {
+
+    fetch('https://raw.githubusercontent.com/alexanderwassberg/ordflaket/master/names.txt')
+        .then(response => response.text())
+        .then(data => {
+            nameGen(data);
+        });
+}
+
+function nameGen(names) {
+    var name = names.toString().split('\n');
+    var randomName = name[Math.floor(Math.random() * name.length)];
+    var nameEl = document.getElementById('name');
+
+    if(!randomName.endsWith('s')){ nameEl.innerText = randomName + 's ';
+    } else { nameEl.innerText = randomName + ' '; }
 }
 
 function wordGen(data) {
@@ -40,9 +61,10 @@ function wordGen(data) {
         wordsRight[i] = words[1];
     }
 
-    var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
+    var word = wordsLeft[wordIndex1] + ' & ' + wordsRight[wordIndex2];
 
     var el = document.getElementById('word');
+
     el.innerText = word;
     el.dataset.word1 = wordIndex1;
     el.dataset.word2 = wordIndex2;
@@ -98,9 +120,4 @@ function copyWord() {
             textArea.remove();
         });
     }
-}
-
-function getIndicesFromUrl() {
-	var url = window.location.search.replace(/[^\d|\-]/g, "");
-    return url.split("-");
 }
