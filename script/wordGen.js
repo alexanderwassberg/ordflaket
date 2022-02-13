@@ -61,7 +61,7 @@ function wordGen(data) {
         wordsRight[i] = words[1];
     }
 
-    var word = wordsLeft[wordIndex1] + ' - ' + wordsRight[wordIndex2];
+    var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
 
     var el = document.getElementById('word');
 
