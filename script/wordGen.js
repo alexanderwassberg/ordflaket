@@ -38,6 +38,7 @@ function nameGen(names) {
 
     if(!randomName.endsWith('s')){ nameEl.innerText = randomName + 's ';
     } else { nameEl.innerText = randomName + ' '; }
+
 }
 
 function wordGen(data) {
@@ -60,8 +61,11 @@ function wordGen(data) {
         wordsLeft[i] = words[0];
         wordsRight[i] = words[1];
     }
-
-    var word = wordsLeft[wordIndex1] + ' & ' + wordsRight[wordIndex2];
+    if (window.location.href.indexOf("#business") > -1) {
+        var word = wordsLeft[wordIndex1] + ' & ' + wordsRight[wordIndex2];
+    } else {
+        var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
+    }
 
     var el = document.getElementById('word');
 
