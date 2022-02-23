@@ -61,11 +61,16 @@ function wordGen(data) {
         wordsLeft[i] = words[0];
         wordsRight[i] = words[1];
     }
+<<<<<<< HEAD
     if (window.location.href.indexOf("#business") > -1) {
         var word = wordsLeft[wordIndex1] + ' & ' + wordsRight[wordIndex2];
     } else {
         var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
     }
+=======
+
+    var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
+>>>>>>> 142ff6cbda5540489e557fee4d07231ed104bfa2
 
     var el = document.getElementById('word');
 
