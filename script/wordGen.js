@@ -3,12 +3,14 @@ window.onload = () => {
   
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-               .register('./sw.js');
+        .register('./sw.js');
     }
 
     getWord();
 
 }
+
+var popup = document.querySelector('.copied-container');
 
 function getWord() {
     var voice_id = document.getElementById("voice").selectedIndex;
@@ -61,25 +63,20 @@ function wordGen(data) {
         wordsLeft[i] = words[0];
         wordsRight[i] = words[1];
     }
-<<<<<<< HEAD
+
+    // Character between word depending on url (#business)
     if (window.location.href.indexOf("#business") > -1) {
         var word = wordsLeft[wordIndex1] + ' & ' + wordsRight[wordIndex2];
-    } else {
-        var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
     }
-=======
 
     var word = wordsLeft[wordIndex1] + '-' + wordsRight[wordIndex2];
->>>>>>> 142ff6cbda5540489e557fee4d07231ed104bfa2
-
     var el = document.getElementById('word');
 
     el.innerText = word;
     el.dataset.word1 = wordIndex1;
     el.dataset.word2 = wordIndex2;
 
-    // window.history.pushState({}, '', '/?' + wordIndex1 + '-' + wordIndex2);
-
+    // Speech!
     say(word);
 }
 
@@ -104,11 +101,9 @@ function say(m) {
     speechSynthesis.speak(msg);
 }
 
-var popup = document.querySelector('.copied-container');
-
 function copyWord() {
 
-    var textToCopy = document.querySelector('h1').innerText;
+    var textToCopy = document.getElementById('word').innerText;
     popup.classList.add('active');
 
     if (navigator.clipboard && window.isSecureContext) {
