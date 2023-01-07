@@ -4,7 +4,7 @@ import urllib.request
 import subprocess
 
 # Open the file from the URL
-with urllib.request.urlopen("https://raw.githubusercontent.com/alexanderwassberg/ordflaket/master/words.txt") as f:
+with urllib.request.urlopen("https://gist.githubusercontent.com/alexanderwassberg/4614feaf1258c11bec7170ece37db610/raw/b6d68a8f26563cd6b237e67fdc4774887b147ed2/words.txt") as f:
     # Read the contents of the URL
     data = f.read().decode()
 
