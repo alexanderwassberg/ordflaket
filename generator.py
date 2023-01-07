@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 import random
 import urllib.request
+import subprocess
 
 # Open the file from the URL
 with urllib.request.urlopen("https://raw.githubusercontent.com/alexanderwassberg/ordflaket/master/words.txt") as f:
-    # Read the contents of the file
+    # Read the contents of the URL
     data = f.read().decode()
 
 words = data.split("\n")
@@ -30,6 +31,8 @@ if listA and listB:
   combined_string = wordA + "-" + wordB
 
   print(combined_string.capitalize())
+
+  #subprocess.run(["figlet", combined_string])
 
 else:
   print("Lists are empty")
