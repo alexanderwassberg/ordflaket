@@ -13,10 +13,13 @@ words = data.split("\n")
 listA, listB = [], []
 
 for word in words:
+
   split_word = word.split("-")
+
   if len(split_word) == 2:
     listA.append(split_word[0])
     listB.append(split_word[1])
+
 
 if listA and listB:
   # Choose a random index into each list
