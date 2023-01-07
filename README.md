@@ -1,7 +1,7 @@
 ## Ordflaket 2.0 - Python Edition
 
 1. Clone the repo in Home Dir
-2. Run ``python ~/ordflaket_2.0/generator.py`` in terminal 
+2. Run ``python ~/ordflaket/generator.py`` in terminal 
 
 
 Make sure that **python3** is installed on your system
